@@ -1,0 +1,171 @@
+---
+title: "Informe grupal"
+subtitle: "Ecología de poblaciones silvestres"
+abstract: |
+  The abstract of the article.
+  
+authors: 
+- name: |
+      Author 1,  
+      Author 1 b
+  affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
+  
+- name: Author 2
+  affiliation: Department of ZZZ, University of WWW
+  
+date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
+publisher: "Some Publisher"
+output: DMtemplates::APAreport
+latex_engine: xelatex
+toc: true
+toc-depth: 2
+lof: true
+lot: true
+number_sections: true
+papersize: letter
+fontsize: 12pt
+documentclass: article
+classoption: twoside, openright
+language: "spanish"
+secnumdepth: 1
+geometry: "top=2.5cm, bottom=2.5cm, left=3cm, right=3cm"
+fancyHeader: true
+mainfont: Cambria
+mathfont: Cambria
+sansfont: Arial
+preamble: |
+    \usepackage{fancyhdr}
+    
+    \pagestyle{fancy}
+    
+    \lhead{APA Template}
+    
+    \rhead{D. Martinez}
+    
+    \setlength\parindent{24pt}
+    
+    \setlength{\parskip}{12pt}
+    
+    \usepackage{setspace}
+    
+    \singlespacing
+    
+    \counterwithin{figure}{chapter}
+    
+    \counterwithin{table}{chapter}
+    
+    \newtheorem{theorem}{Teorema}
+    
+    \newtheorem{algorithm}{Algoritmo}
+
+    \newtheorem{axiom}{Axioma}
+    
+    \newtheorem{definition}{Definición}
+
+    \newtheorem{example}{Ejemplo}
+    
+    \newtheorem{exercise}{Ejercicio}
+    
+    \newtheorem{lemma}{Lemma}
+    
+    \newtheorem{proposition}{Proposición}
+    
+    \newtheorem{remark}{Remarca}
+    
+    \newtheorem{solution}{Solución\;\thesection\,.}
+    
+    \newtheorem{summary}{Resumen}
+    
+bibliography: ExampleBIB.bib
+csl: apa.csl
+urlcolor: blue
+citecolor: black
+linkcolor: black
+year: "`r as.POSIXlt(Sys.time())$year+1900`"
+spacing: siglespacing
+---
+
+```{r settings}
+knitr::knit_hooks$set(inline = identity) 
+```
+
+
+# Para correr esta plantilla
+
+En la consola de R, correr
+
+```
+install.packages("devtools")
+devtools::devtools::install_github("dawidh15/DMtemplates")
+```
+
+# Introducción
+
+ Generar una revisión bibliográfica sobre temas relacionados con la ecología poblacional de *Siphonaria gigas* (o similares), y de *Strombus galeatus* (o *S. gigas*). Los estudios incluidos deben contener información sobre:
+
+- Crecimiento: talla de los animales en relación al tiempo.
+
+- Mortalidad: estimaciones numéricas o datos de mortalidad
+
+- Supervivencia: estimaciones numéricas o datos de supervivencia
+
+- Matrices de transición: todo lo relacionado con este tema.
+
+- Análisis de viabilidad de poblaciones: todo lo relacionado con este tema.
+
+Durante la revisión bibliográfica es importante utilizar estos puntos como criterios de aceptación para un artículo. Si no contiene información sobre estos criterios, entonces no vale la pena incluirlo en la revisión.
+
+Si el estudiante no está familiarizado con las herramientas de búsqueda bibliográfica y bases de datos suscritas por la Universidad Nacional, es su responsabilidad informarse con la bibliotecaria de la Unidad Académica.
+
+# Metodología
+
+Definir el procedimiento de análisis. Se basarán en la teoría, en las investigaciones individuales, y en una búsqueda general en línea, para escoger un procedimiento de análisis que permita **calcular la probabilidad de extinción de las poblaciones de interés a cinco años**.
+
+Diseño de muestreo. Solo hay tiempo para un sitio por población. Por tanto, el diseño de muestreo se refiere al establecimiento de las variables que se deben medir en el campo, a los formularios de campo, al procedimiento para tomar los datos y al diseño de la base de datos (se *recomienda* una base de **LibreOffice Base**).
+
+# Resultados
+
+Aquí se presentará la estimación de la probabilidad de extinción a 5 años para cada especie. También cualquier resultado que surge como paso intermedio para calcular la probabilidad de extinción.
+
+# Discusión
+
+Discutiremos sobre la validez de los resultados, en función de los datos obtenidos y los requerimientos del análisi de datos
+
+# Cuadros
+
+Para cambiar la fuente, el espaciado y referenciar el cuadro, ver siguiente ejemplo: \index{cuadros y su formato}
+
+
+\begingroup
+\sffamily
+\small
+
+\singlespacing
+
+    
+| Unidad | Equivalencia en SI|
+|------------:|----------:|
+| 1 vara | \SI{0.8393}{\metre}|
+| 1 cuarta | \SI{0.209825}{\metre}|
+| 1 tercia | \SI{0.2797}{\metre}|
+| 1 mecate | \SI{20.1432}{\metre}|
+| 1 manzana | \SI{6960.6}{\metre\squared}
+| 1 caja | \SI{16}{\kilogram}|
+| 1 fanega | \SI{92}{\kilogram}|
+| 1 carga | \SI{161}{\kilogram}|
+| 1 botella | \SI{0.63}{\litre}|
+| 1 cajuela | \SI{16.6}{\litre}|
+
+
+Table: (\#tab:OldUnits) Unidades antiguas utilizadas en Costa Rica, y su equivalencia con el Sistema Internacional de Unidades.
+\index{cuadros. Encabezados y referencias}
+
+\endgroup
+
+# Bibliografía {-}
+
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\noindent
