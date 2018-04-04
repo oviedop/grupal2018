@@ -96,7 +96,7 @@ En la consola de R, correr
 
 ```
 install.packages("devtools")
-devtools::devtools::install_github("dawidh15/DMtemplates")
+devtools::install_github("dawidh15/DMtemplates")
 ```
 
 # Introducción
