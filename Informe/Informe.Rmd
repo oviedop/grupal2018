@@ -6,7 +6,7 @@ abstract: |
   
 authors: 
 - name: |
-      Author 1,  
+      Diego Monge-Villegas,
       Author 1 b
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
   
