@@ -6,8 +6,8 @@ abstract: |
   
 authors: 
 - name: |
-      Author 1,  
-      Author 1 b
+      Author 1, Jose Guillermo  
+
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
   
 - name: Author 2
