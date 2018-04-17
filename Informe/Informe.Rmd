@@ -5,7 +5,7 @@ abstract: |
   The abstract of the article.
   
 authors: 
-- name: |
+- name: Veronica Arias Perez
       Author 1,  
       Author 1 b
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
