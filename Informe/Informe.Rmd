@@ -7,7 +7,8 @@ abstract: |
 authors:
 - name: |
       Diego Monge-Villegas,
-      Natalia Villalobos Sequeira
+      Natalia Villalobos Sequeira,
+      Verónica Arias Pérez
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
   
   
