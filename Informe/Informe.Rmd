@@ -4,8 +4,9 @@ subtitle: "Ecología de poblaciones silvestres"
 abstract: |
   The abstract of the article.
   
-authors: 
-- name: Veronica Arias Perez
+authors:
+- name: | 
+         Verónica Arias Pérez
       Author 1,  
       Author 1 b
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
