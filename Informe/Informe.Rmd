@@ -4,7 +4,7 @@ subtitle: "Ecología de poblaciones silvestres"
 abstract: |
   The abstract of the article.
   
-authors: 
+authors: Natalia Villalobos Sequeira
 - name: |
       Diego Monge-Villegas
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
