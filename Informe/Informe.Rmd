@@ -7,7 +7,13 @@ abstract: |
 authors:
 - name: |
 
-      Diego Monge-Villegas, Paul Oviedo, Natalia Villalobos-Sequeira, Eylin Flores-Zuñiga, Marlon Guerrero, Jose Guillermo Ramirez Bogantes, Jessica Jimenes Loria
+      Diego Monge-Villegas,
+      Paul Oviedo,
+      Natalia Villalobos-Sequeira,
+      Eylin Flores-Zuñiga,
+      Marlon Guerrero,
+      Jose Guillermo Ramirez Bogantes,
+      Jessica Jimenes Loria
       
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
 date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
