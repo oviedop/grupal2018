@@ -6,13 +6,11 @@ abstract: |
   
 authors: 
 - name: |
-      Author 1, Jose Guillermo  
+  Jose Guillermo  
 
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
   
-- name: Author 2
-  affiliation: Department of ZZZ, University of WWW
-  
+
 date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
 publisher: "Some Publisher"
 output: DMtemplates::APAreport
