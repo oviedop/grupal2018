@@ -7,7 +7,7 @@ abstract: |
 authors:
 - name: |
 
-      Diego Monge-Villegas,
+      Diego Monge-Villegas, 
       Paul Oviedo,
       Natalia Villalobos-Sequeira,
       Eylin Flores-Zuñiga,
@@ -106,7 +106,7 @@ devtools::install_github("dawidh15/DMtemplates")
 
  Generar una revisión bibliográfica sobre temas relacionados con la ecología poblacional de *Siphonaria gigas* (o similares), y de *Strombus galeatus* (o *S. gigas*). Los estudios incluidos deben contener información sobre:
 
-- Crecimiento: talla de los animales en relación al tiempo.
+- Crecimiento: talla de los animales en relación al tiempo.  ggggggggh
 
 - Mortalidad: estimaciones numéricas o datos de mortalidad
 
