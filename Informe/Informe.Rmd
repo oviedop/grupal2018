@@ -104,20 +104,14 @@ devtools::install_github("dawidh15/DMtemplates")
 
 # Introducción
 
- Generar una revisión bibliográfica sobre temas relacionados con la ecología poblacional de *Siphonaria gigas* (o similares), y de *Strombus galeatus* (o *S. gigas*). Los estudios incluidos deben contener información sobre:
-
-- Crecimiento: talla de los animales en relación al tiempo.  ggggggggh
-
-- Mortalidad: estimaciones numéricas o datos de mortalidad
-
-- Supervivencia: estimaciones numéricas o datos de supervivencia
-
-- Matrices de transición: todo lo relacionado con este tema.
-
-- Análisis de viabilidad de poblaciones: todo lo relacionado con este tema.
-
-Durante la revisión bibliográfica es importante utilizar estos puntos como criterios de aceptación para un artículo. Si no contiene información sobre estos criterios, entonces no vale la pena incluirlo en la revisión.
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 Si el estudiante no está familiarizado con las herramientas de búsqueda bibliográfica y bases de datos suscritas por la Universidad Nacional, es su responsabilidad informarse con la bibliotecaria de la Unidad Académica.
 [@mora1998estructura]
 [@arroyo2008caracteristicas]
