@@ -102,7 +102,7 @@ install.packages("devtools")
 devtools::install_github("dawidh15/DMtemplates")
 ```
 
-# Introducción  Tarea del 26 de abril 
+# Introducción  Tarea del 26 de abril. 
 
  En la costa del Pacífico americano, los caracoles del género Strombus, mejor conocidos como cambute, se distribuyen desde el Golfo de México hasta las islas Galápagos. En Costa Rica es posible hallar estos caracoles a lo largo de toda la costa, principalmente en zonas rocosas y poco profundas.  En el sector San Miguel del Refugio Nacional de Vida Silvestre Cabo Blanco, se estimó la población de Strombus galeatus en 627 individuos, donde el adulto con mayor peso alcanzó  2 775 g y el juvenil más pequeño pesó 50 g. A nivel etario es posible separar los individuos de cambute en tres clases de edades (adultos, subadultos y juveniles), de acuerdo con la biometría de su concha (largo, ancho y grosor del labio). Por ejemplo, se estima que el largo medio de la concha de los adultos es de 183,2 ± 9,5 mm, mientras que el ancho medio de la concha es de 146,5 ± 11,1 mm [@mora1998estructura].
  
