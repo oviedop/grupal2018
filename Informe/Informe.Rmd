@@ -158,12 +158,18 @@ Si el estudiante no está familiarizado con las herramientas de búsqueda biblio
 
 # Metodología
 
-El sitio de estudio fue el mismo utilizado por Ortega (1985) en un cabo llamado punta mala en el pacifico central de Costa Rica el ambiente presenta una estacion seca desde diciembre hasta abril y  una temporada de lluvias desde mayo hasta noviembre. en la parte sur de cabo es una proyeccion de bancos de arena. 
+##Área de estudio
 
-Intervalos de clasificacion
+El Refugio Nacional de Vida Silvestre Punta Mala está localizado en la costa del Pacífico Central de Costa Rica, a 8 km de Playa Jacó y entre las coordenadas 9º31’04”N y 84º32’25” W  (Alvarado, 2007). Parte de la zona marino costera del refugio consiste de varios metros de material rocoso formados durante el Mioceno medio, que quedan expuestos durante el periodo de marea baja (Seyfried, Sprechmann & Aguilar, 1985) (Figura 1). Las condiciones climatológicas de la zona incluyen una precipitación media anual de 3 689 mm, una temperatura media anual de 27 ºC y una humedad relativa del 98% (Solano & Villalobos, sf).
 
-Se considera como juveniles losindividuos que midan mas de 87 mm y manos de 150 mm, como subadultos los que midan mas de 150 mm y manos de 170 mm y los adultos seran los que midan mas de 170 mm.
 
+Imajen
+
+##Muestreo de Lobatus galeatus
+
+ Se establecerán cinco parcelas permanentes de muestreo de 50 x 20 m, distribuidas a conveniencia en la zona intermareal durante la marea baja. El muestreo se realizará por medio de una búsqueda  intensiva de individuos de L. galeatus dentro de cada parcela; así como, por buceo con tubo de respiración, según lo sugerido por Arroyo & Mena (1998). Cada animal avistado será llevado a la orilla para la biometría del largo total de la concha (medición con vernier (±0.005mm). Con base a esta medida se asignará cada individuo a una clase de edad, en la cual se consideran juveniles aquellos organismos con una longitud inferior a 150 mm, subadultos los organismos entre 150 - 170 mm y adultos aquellos organismos con una longitud superior a los 170 mm.
+
+ A partir de los datos obtenidos para clase de edad se construirá una tabla de vida. Además de todos los individuos encontrados se anotará si en el momento de la captura se encuentra vivo o muerto.  En conjunto con la estimación de la edad de cada individuo, se calculará la proporción de individuos que sobreviven o mueren en cada estadio.
 
 
 
