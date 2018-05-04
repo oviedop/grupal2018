@@ -41,9 +41,9 @@ preamble: |
     
     \pagestyle{fancy}
     
-    \lhead{APA Template}
+    \lhead{Grupal 2018}
     
-    \rhead{D. Martinez}
+    \rhead{Ecología de Poblaciones Silvestres}
     
     \setlength\parindent{24pt}
     
@@ -53,9 +53,9 @@ preamble: |
     
     \singlespacing
     
-    \counterwithin{figure}{chapter}
+    \counterwithin{figure}{section}
     
-    \counterwithin{table}{chapter}
+    \counterwithin{table}{section}
     
     \newtheorem{theorem}{Teorema}
     
@@ -78,6 +78,12 @@ preamble: |
     \newtheorem{solution}{Solución\;\thesection\,.}
     
     \newtheorem{summary}{Resumen}
+    
+    \renewcommand{\topfraction}{0.8}
+    
+    \renewcommand{\textfraction}{0.1}
+    
+    \renewcommand{\floatpagefraction}{0.7}
     
 bibliography: ExampleBIB.bib
 csl: apa.csl
@@ -122,9 +128,7 @@ El objetivo de este trabajo es estimar la probabilidad de extinción a cinco añ
 
 El Refugio Nacional de Vida Silvestre Punta Mala está localizado en la costa del Pacífico Central de Costa Rica, a 8 km de Playa Jacó y entre las coordenadas 9º31’04”N y 84º32’25” W  [@Alvarado2007]. Parte de la zona marino costera del refugio consiste de varios metros de material rocoso formados durante el Mioceno medio, que quedan expuestos durante el periodo de marea baja [@seyfried1985sedimentologia] (Figura 1). Las condiciones climatológicas de la zona incluyen una precipitación media anual de 3 689 mm, una temperatura media anual de 27 ºC y una humedad relativa del 98% [@Solano2012].
 
-
 ![Figura 1. Ubicación de la zona de muestreo, Refugio Nacional de Vida Silvestre Playa Hermosa-Punta Mala, 2018.](smallorb.png) incluir imajen
-
 
 ##Muestreo de Lobatus galeatus
 
