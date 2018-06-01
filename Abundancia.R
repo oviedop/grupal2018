@@ -6,6 +6,7 @@ J <- 3 # number of secondary periods#
 lam <- 3
 phi <- 0.5
 p <- 0.3
+
 #set.seed(26)
 y <- array(NA, c(n, T, J))
 M <- rpois(n, lam) # Local population size
@@ -19,7 +20,17 @@ for(i in 1:n) {
   y[i,,3] <- rbinom(T, Nleft2, p)
 }
 y.ijt <- cbind(y[,1,], y[,2,], y[,3,], y[,4,])
-umf1 <- unmarkedFrameGMM(y=y.ijt, numPrimary=T, type="removal")
+
+##Cargar paquetes
+library(unmarked)
+
+
+## Leer los datos
+juvenil <- read.csv("juvenil.csv", header = FALSE, row.names = NULL)
+juvenil <- as.matrix(juvenil)
+
+
+umf1 <- unmarkedFrameGMM(y= juvenil, numPrimary=1, type="removal")# remocion solo se realizo una vez
 
 (m1 <- gmultmix(~1, ~1, ~1, data=umf1, K=30)) #no hay covariables 
 backTransform(m1, type="lambda") # Individuals per plot
@@ -36,25 +47,25 @@ plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
 
 
 
-#queda pendiente de conocer la formula
-fm <- nonparboot(m1, B = 30) # should use larger B in real life.
-vcov(fm, method = "hessian")
-vcov(fm, method = "nonparboot")
-avg.abundance <- backTransform(linearComb(fm, type = "state", 
-                                          coefficients = c(1, 0, 0)))
-## Bootstrap sample information propagates through to derived quantities.
-vcov(avg.abundance, method = "hessian")
-vcov(avg.abundance, method = "nonparboot")
-SE(avg.abundance, method = "nonparboot")
+## Leer los datos Subadultos
+Subadulto <- read.csv("Subadulto.csv", header = FALSE, row.names = NULL)
+Subadulto <- as.matrix(Subadulto)
 
 
+umf2 <- unmarkedFrameGMM(y= Subadulto, numPrimary=1, type="removal")
 
-
-
-
-
-
-
+(m1 <- gmultmix(~1, ~1,~1, data=umf2, K=30)) #no hay covariables 
+backTransform(m1, type="lambda") # Individuals per plot
+backTransform(m1, type="phi") # Probability of being avilable
+(p <- backTransform(m1, type="det")) # Probability of detection
+p <- coef(p)
+# Multinomial cell probabilities under removal design
+c(p, (1-p) * p, (1-p)^2 * p)
+# Or more generally:
+head(getP(m1))
+# Empirical Bayes estimates of super-population size
+re <- ranef(m1)
+plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
 
 
 

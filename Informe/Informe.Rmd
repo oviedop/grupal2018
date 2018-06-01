@@ -142,6 +142,8 @@ El Refugio Nacional de Vida Silvestre Punta Mala está localizado en la costa de
  
 ##Proceso de análisis 
 
+
+
 ###Recursos de información
 
  Para realizar el análisis requerimos los siguientes recursos de información:
@@ -198,9 +200,22 @@ Se establecerán parcelas de (10 x 10) m, estas serán medidas con cinta métric
 
 A cada individuo colectado, se le tomarán las medidas correspondientes, con un vernier de ±0.005 mm, se anotará además si el animal esta vivo o muerto.
 
+#Análisis estadistico 
+
+Para el analisis de los datos recolectados, se procedio a escoger el paquete de R, llamado "Unmarked", es un modelo que se utiliza para animales no marcados y que se adapta a distintos caracteristicas, donde uno de ellos es el planteado en esta investigación.
+
+Asi mismo, se utilizo la función "gmultmix Generalized multinomial N-mixture model", basandose en la opción de remoción (Removal), ya que corresponde al metodo de mutreo que se utiliza. Además esta función, toma encuenta las caracteristicas de  abundancia, disponibilidad y probabilidad de detección. 
+
+Los argumentos principales son los siguientes:
+   
+ Por otra parte las ecuaciones que se utilizaran son las siguientes:
+     
+  
 
 
-
+  
+   
+   
 
 
 
