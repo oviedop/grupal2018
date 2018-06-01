@@ -1,0 +1,9 @@
+#ecuacion de von bertalanffy
+
+
+  
+VB<-function(Li,k,t,t0){
+  VB<-Li*(1-exp(-k*(t-t0)))
+  return(VB)
+}
+curve(expr = VB(Li=183.2,k=0.3706,t0=-0.2,t=x),from=0, to=15)
