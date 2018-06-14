@@ -299,7 +299,7 @@ Viabilidadcambute <- transStochMat$new(
 Viabilidadcambute$plotN()  
 ```
 
-la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años todos los especimenes desapareceran en la zona.
+la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años todos los especimenes desaparecerán en la zona.
 
 ```{r}
 Viabilidadcambute$plotExtProb()
