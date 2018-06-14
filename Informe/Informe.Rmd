@@ -8,13 +8,21 @@ authors:
 - name: |
 
       Diego Monge-Villegas, 
+      
       Paul Oviedo,
+      
       Natalia Villalobos-Sequeira,
+      
       Eilyn Flores-Zuñiga,
+      
       Marlon Guerrero,
+      
       Jose Guillermo Ramirez Bogantes,
+      
       Jessica Jimenes Loria
+      
       Antony Cascante
+      
       Veronica Arias 
       
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
@@ -98,6 +106,7 @@ spacing: siglespacing
 
 ```{r settings}
 knitr::knit_hooks$set(inline = identity) 
+source("C:/localforks/grupal2018/informe/vbgf.R")
 ```
 
 
