@@ -127,7 +127,8 @@ Aquí se presentará la estimación de la probabilidad de extinción a 5 años p
 
 # Discusión
 
-Discutiremos sobre la validez de los resultados, en función de los datos obtenidos y los requerimientos del análisi de datos
+#discosion de los graficos de barra  Pual y memo
+Los resultados muestran que la abundacia de *S.galeatus* en el RNVS Punta Mala es baja, al menos en la zona supralitoral. El metodo utilizado en este estudio permitió una deteccion similar en los doce cuadrantes, aunque los individuos registrados fueron pocos y correspondieron en su mayoría a la clase juvenil, no se puede ausgurar que en el sitio haya habido una alta extraccion de caracoles para la comercializacion, ya que los cambios drasticos en las condiciones ambientales que esta zona experimenta a llargo del dia, puede ser un factor que afecte la abundancia de caracoles vivos en las diferentes clases de edad. Por lo tanto es recomendable realizr un muestreo estratificado a diferentes profundidades.  
 
 # Cuadros
 
