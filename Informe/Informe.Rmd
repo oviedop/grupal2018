@@ -135,12 +135,13 @@ El Refugio Nacional de Vida Silvestre Punta Mala está localizado en la costa de
 
 ##Muestreo de Lobatus galeatus
 
- Se realizarán grupos de tres personas, los cuales serán los encargados de establecer la parcela y de realizar una busqueda dentro de las mismas, cada grupo hará el máximo de parcelas posibles. Se establecerán parcelas distribuidas a conveniencia en la zona intermareal durante la marea baja, preferiblemente en zonas donde hayan pozas o agua estancada una vez que la marea esté baja . El muestreo se realizará por medio de una búsqueda  intensiva de individuos de *L. galeatus* dentro de cada parcela poorun tiempo determinado de 20 minutos; así como, por buceo con tubo de respiración (según lo sugerido por @Arroyo-Mora1998), recolectando y retirando todos los individuos vivos con el fin de realizar la biometría del largo total de la concha (medición con vernier, ±0.005mm) de cada animal, una vez medidos se depositarán a una distancia no menor de 10 metros de la parcela medida o de otras realizadas por los diferentes grupos, ésteprocedimiento se realizará hasta que no se encuentren individuos vivos dentro del lapso de tiempo determinado. Con base a esta medida se asignará cada individuo a una clase de edad según @Arroyo-Mora1998, en la cual se consideran juveniles aquellos organismos con una longitud inferior a 150 mm, subadultos los organismos entre 150 - 170 mm y adultos aquellos organismos con una longitud superior a los 170 mm.
+Se realizó subgrupos de tres personas con una totalidad de tres grupos, se establecieron tres parcelas de 10 x 10 m, a conveniencia en la zona intermareal durante la marea baja, preferiblemente en zonas donde haya pozas o agua estancada. Además en cada parcela se efectuó   una búsqueda intensiva de individuos de *L. galeatus* por un tiempo determinado de 20 minutos; así mismo se utilizó la técnica de búsqueda por buceo con tubo de respiración (según lo sugerido por @Arroyo-Mora1998). Posteriormente se recolectaron solamente los individuos vivos con el fin de realizar la biometría del largo total de la concha (medición con vernier, ±0.005mm) de cada animal, una vez medidos se depositaron a una distancia no menor de 10 metros de la parcela medida. Este procedimiento se replicó por tres veces mínimo, hasta que no se encuentren individuos vivos dentro del lapso de tiempo determinado. 
+
+Por otro lado utilizando las medidas  descritas por [@Arroyo-Mora1998], donde asigna a cada individuo una clase según la edad, por ejemplo para juveniles corresponde a una longitud inferior a 150 mm, subadultos entre 150 - 170 mm y adultos superior a los 170 mm. Se logró separar cada organismo recolectado en las distintas clases y  a partir de los datos obtenidos se construye una tabla de vida.
 
  A partir de los datos obtenidos para clase de edad se construirá una tabla de vida. Además de todos los individuos encontrados se anotará si en el momento de la captura se encuentra vivo o muerto.  En conjunto con la estimación de la edad de cada individuo, se calculará la proporción de individuos que sobreviven o mueren en cada estadío.
  
 ##Proceso de análisis 
-
 
 
 ###Recursos de información
@@ -164,6 +165,25 @@ El Refugio Nacional de Vida Silvestre Punta Mala está localizado en la costa de
  - Área de la población.
  
 ### Análisis
+
+Para el analisis de los datos recolectados, se utilizó el paquete de R, denominado "Unmarked", es un modelo que se utiliza para animales no marcados y de abundancia. Así mismo, se utilizó la función "gmultmix Generalized multinomial N-mixture model", basándose en la opción de remoción (Removal) y variando la función de acuerdo a los datos que obtenidos. Además esta función, toma en cuenta las características de abundancia, disponibilidad y probabilidad de detección, es decir para obtener la probabilidad  de existencia en los sitios de muestreo de las clases obtenidas. 
+
+Función utilizada es:
+
+```{r}
+umf1 <- unmarkedFrameGMM(y= juvenil, numPrimary=1, type="removal")
+umf2 <- unmarkedFrameGMM(y= Subadulto, numPrimary=1, type="removal")
+```
+
+
+Por otra parte, a partir del conjunto de datos recolectados de la longitud de la concha para cada clase de edad, se utilizó la función de crecimiento de Von Bertalanffy para estimar la probabilidad de madurez sexual de cada individuo. Por último se calculó la matriz de transición proyectada a 5 años, que permita estimar la probabilidad de extinción de la especie en ese sitio al final de ese periodo.
+
+Función de Von Bertalanffy:
+
+```{r}
+ VB<-function(Li,k,t,t0)
+```
+
 
 Área de muestreo
 
