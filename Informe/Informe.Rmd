@@ -227,6 +227,8 @@ Aquí se presentará la estimación de la probabilidad de extinción a 5 años p
 
 Durante los muestreos en los 12 sitios de estudio no se encontraron con individuos adultos, los individuos con talla de subadulto fueron dos individuos y estados inmaduros fueron los mas comunes de encontrar con un total de 21 individuos. en la figura 1 muestra el calculo de las probabilidades de presencia por sitio de muestreo para los individuos inmaduros y en la figura 2 se muestran las probabilidades de presencia por sitio de individuos juveniles, para el calculo de adultos no se pudo realizar por falta de datos. 
 
+nT:(21,1,0)
+
 ```{r}
 library(unmarked)
 juvenil <- read.csv("juvenil.csv", header = FALSE, row.names = NULL)
@@ -297,6 +299,7 @@ Viabilidadcambute <- transStochMat$new(
 Viabilidadcambute$plotN()  
 ```
 
+la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años todos los especimenes desapareceran en la zona.
 
 # Discusión
 

@@ -237,6 +237,7 @@ transStochMat <- setRefClass("transStochMat",
 
 #-----Viabilidad poblacional-----
 #funcion para calcular abundancia con modelos de rmocion
+
 Area <- 1161252
 (n_0 <- floor((2.25 / 100) * Area))
 (n_1 <- floor((1.56 / 100) * Area))
@@ -254,3 +255,9 @@ Viabilidadcambute <- transStochMat$new(
 
 # Tener en cuenta que la matriz de transición en este caso no toma en cuenta la mortalidad de una etapa a la siguiente. Por tanto, los resultados tienden a ser muy optimistas.
 Viabilidadcambute$plotN()     
+
+Viabilidadcambute$darR0()
+transStochMat$new(Matrices(500), n0=n, t=5, umbral=5806, incluirEtapa=c(0,1,1))
+
+#####aqui no se que estoy haciendo
+library(popbio)
