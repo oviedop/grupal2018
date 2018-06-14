@@ -6,6 +6,13 @@ abstract: |
   
 authors:
 - name: |
+<<<<<<< HEAD
+  Jose Guillermo  
+
+  affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
+  
+
+=======
 
       Diego Monge-Villegas, 
       Paul Oviedo,
@@ -18,6 +25,7 @@ authors:
       Veronica Arias 
       
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
+>>>>>>> master
 date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
 publisher: "Some Publisher"
 output: DMtemplates::APAreport
@@ -285,7 +293,11 @@ Viabilidadcambute$plotExtProb()
 
 # Discusión
 
-Discutiremos sobre la validez de los resultados, en función de los datos obtenidos y los requerimientos del análisis de datos
+
+# Discusion de los graficos de barra..
+
+Los resultados muestran que la abundacia de *S.galeatus* en el RNVS Punta Mala es baja, al menos en la zona supralitoral. El metodo utilizado en este estudio permitió una deteccion similar en los doce cuadrantes, aunque los individuos registrados fueron pocos y correspondieron en su mayoría a la clase juvenil, no se puede ausgurar que en el sitio haya habido una alta extraccion de caracoles para la comercializacion, ya que los cambios drasticos en las condiciones ambientales que esta zona experimenta a llargo del dia, puede ser un factor que afecte la abundancia de caracoles vivos en las diferentes clases de edad. Por lo tanto es recomendable realizr un muestreo estratificado a diferentes profundidades.  
+
 
 # Cuadros
 
