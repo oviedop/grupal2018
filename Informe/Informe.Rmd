@@ -248,47 +248,14 @@ Durante los muestreos en los 12 sitios de estudio no se encontraron con individu
 nT:(21,1,0)
 
 ```{r}
-library(unmarked)
-juvenil <- read.csv("juvenil.csv", header = FALSE, row.names = NULL)
-juvenil <- as.matrix(juvenil)
 
-
-umf1 <- unmarkedFrameGMM(y= juvenil, numPrimary=1, type="removal")# remocion solo se realizo una vez
-
-(m1 <- gmultmix(~1, ~1, ~1, data=umf1, K=30)) #no hay covariables 
-backTransform(m1, type="lambda") # Individuals per plot
-backTransform(m1, type="phi") # Probability of being avilable
-(p <- backTransform(m1, type="det")) # Probability of detection
-p <- coef(p)
-# Multinomial cell probabilities under removal design
-c(p, (1-p) * p, (1-p)^2 * p)
-# Or more generally:
-head(getP(m1))
-# Empirical Bayes estimates of super-population size
-re <- ranef(m1)
 plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
 
 ```
 figura 1: probabilidades de presencia de *S. galeatus* juveniles en las parcelas escogidas aleatoriamente.
 
 ```{r}
-Subadulto <- read.csv("Subadulto.csv", header = FALSE, row.names = NULL)
-Subadulto <- as.matrix(Subadulto)
 
-
-umf2 <- unmarkedFrameGMM(y= Subadulto, numPrimary=1, type="removal")
-
-(m1 <- gmultmix(~1, ~1,~1, data=umf2, K=30)) #no hay covariables 
-backTransform(m1, type="lambda") # Individuals per plot
-backTransform(m1, type="phi") # Probability of being avilable
-(p <- backTransform(m1, type="det")) # Probability of detection
-p <- coef(p)
-# Multinomial cell probabilities under removal design
-c(p, (1-p) * p, (1-p)^2 * p)
-# Or more generally:
-head(getP(m1))
-# Empirical Bayes estimates of super-population size
-re <- ranef(m1)
 plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
 ```
 figura 2: probabilidad de presencia de individuos subadultos de *S. galeatus* en las parcelas seleccionadas para el estudio.
@@ -297,10 +264,7 @@ figura 2: probabilidad de presencia de individuos subadultos de *S. galeatus* en
 Mediante la funcion de crecimiento de von bertalanffy pudimos determinar que los organismos de *S. galeatus* tardan aproximadamente 5 años en crecer hasta tener la talla adecuada para la madurez sexual (figura 3)
 
 ```{r}
-VB<-function(Li,k,t,t0){
-  VB<-Li*(1-exp(-k*(t-t0)))
-  return(VB)
-}
+
 curve(expr = VB(Li=183.2,k=0.3706,t0=-0.2,t=x),from=0, to=15)
 ```
 figura 3: funcion de crecimiento de von Bertalanffy de *S. gigas*
@@ -308,16 +272,11 @@ figura 3: funcion de crecimiento de von Bertalanffy de *S. gigas*
 posteriormente el calculo de la matriz de transicion nos indica que la poblacion goza de buena salud, sin embargo cabe recalcar que en este estudio no se tomo en consideracion la mortalidad, por esto se asume que todos los individuos juveniles pasan a sub adultos y de subadultos a adultos sin haber bajas en sus individuos. 
 
 ```{r}
-Viabilidadcambute <- transStochMat$new(
-  matriz = Matrices(500), n0 = n, 
-  t=NT,
-  umbral=Nx,# numero de plantas con potencial reproduvtivo
-  incluirEtapa=c(0,1,1)
-)
+
 Viabilidadcambute$plotN()  
 ```
 
-la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años todos los especimenes desaparecerán en la zona.
+la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años la poblacion de cambute seguirá en el sitio.
 
 ```{r}
 Viabilidadcambute$plotExtProb()
