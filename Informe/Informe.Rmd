@@ -11,13 +11,13 @@ authors:
       Paul Oviedo,
       Natalia Villalobos-Sequeira,
       Eilyn Flores-Zuñiga,
-      Marlon Guerrero,
+      Marlon Guerrero-Castro,
       Jose Guillermo Ramirez Bogantes,
       Jessica Jimenes Loria
       Antony Cascante
       Veronica 
       
-  affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
+affiliation: "Escuela de Ciencias Biológicas, Universidad Nacional"
 date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
 publisher: "Some Publisher"
 output: DMtemplates::APAreport
