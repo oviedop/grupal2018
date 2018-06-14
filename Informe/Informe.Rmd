@@ -4,13 +4,28 @@ subtitle: "Ecología de poblaciones silvestres"
 abstract: |
   The abstract of the article.
   
-authors: 
+authors:
 - name: |
+<<<<<<< HEAD
   Jose Guillermo  
 
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
   
 
+=======
+
+      Diego Monge-Villegas, 
+      Paul Oviedo,
+      Natalia Villalobos-Sequeira,
+      Eilyn Flores-Zuñiga,
+      Marlon Guerrero,
+      Jose Guillermo Ramirez Bogantes,
+      Jessica Jimenes Loria
+      Antony Cascante
+      Veronica Arias 
+      
+  affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
+>>>>>>> master
 date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
 publisher: "Some Publisher"
 output: DMtemplates::APAreport
@@ -36,9 +51,9 @@ preamble: |
     
     \pagestyle{fancy}
     
-    \lhead{APA Template}
+    \lhead{Grupal 2018}
     
-    \rhead{D. Martinez}
+    \rhead{Ecología de Poblaciones Silvestres}
     
     \setlength\parindent{24pt}
     
@@ -48,9 +63,9 @@ preamble: |
     
     \singlespacing
     
-    \counterwithin{figure}{chapter}
+    \counterwithin{figure}{section}
     
-    \counterwithin{table}{chapter}
+    \counterwithin{table}{section}
     
     \newtheorem{theorem}{Teorema}
     
@@ -73,6 +88,12 @@ preamble: |
     \newtheorem{solution}{Solución\;\thesection\,.}
     
     \newtheorem{summary}{Resumen}
+    
+    \renewcommand{\topfraction}{0.8}
+    
+    \renewcommand{\textfraction}{0.1}
+    
+    \renewcommand{\floatpagefraction}{0.7}
     
 bibliography: ExampleBIB.bib
 csl: apa.csl
@@ -99,36 +120,185 @@ devtools::install_github("dawidh15/DMtemplates")
 
 # Introducción
 
- Generar una revisión bibliográfica sobre temas relacionados con la ecología poblacional de *Siphonaria gigas* (o similares), y de *Strombus galeatus* (o *S. gigas*). Los estudios incluidos deben contener información sobre:
+ *Lobatus gigas* es un gasterópodo muy importante comercialmente en muchos de los lugares donde se distribuye. La carne de este caracol es conocida por ser una buena fuente de alimento y proteína, además la concha es comercializada con propósitos ornamentales [@ForbesPacheco2011]. Este molusco alcanza unos 25 cm de longitud en la concha después de 3 a 4 años; edad a partir de la cual son sexualmente maduros. El cambute habita en aguas poco profundas, raras veces son observadas a más de 50 m de profundidad. La especie esta distribuida en la región del Atlántico Occidental, desde Bermudas en el norte hasta el Golfo de México, la parte del Gran Caribe y la costa del norte de América del Sur [@GarciaRodriguez2016].En la vertiente del Pacífico el género *Lobatus* se ubica desde México hasta las islas Galápagos.
+ 
+En Costa Rica se han realizado estudios de *L. galeatus* en el sector de San Miguel del Refugio de Vida Silvestre Cabo Blanco. En este stio se registró un total de 627 individuos, donde el adulto con mayor peso alcanzó  2 775 g y el juvenil más pequeño pesó 50 g. A nivel etario es posible separar los individuos de cambute en tres clases de edades (adultos, subadultos y juveniles), de acuerdo con la biometría de su concha (largo, ancho y grosor del labio). Por ejemplo, se estima que el largo medio de la concha de los adultos es de 183,2 ± 9,5 mm, mientras que el ancho medio de la concha es de 146,5 ± 11,1 mm [@mora1998estructura].
+ 
+Las  poblaciones de *Lobatus galeatus* en lugares como: Panamá, Mexico, Ecuador y otros lugares del Pacífico muestran una baja tasa de crecimiento en los últimos años. Esta situación se relaciona con la explotación masiva sin regulaciones provocada por el ser humano para el consumo de este molusco [@Castellanos-Galindo2011]. Los modelos de crecimiento en esta especie son utilizados en muchos para establecer políticas que regulen la extracción y comercialización. Por ejemplo, en Panamá han detectado que cinco años después de haber prohibido la extracción de cambute, la población aun no muestra una tendencia al aumento, a pesar de encontrar principalmente individuos adultos [@Cipriani2008].
 
-- Crecimiento: talla de los animales en relación al tiempo.
+Los modelos de crecimiento en esta especie son utilizados en muchos estudios con el fin de determinar si la población se encuentra en declive o en aumento, después de que se prohíbe o se permite la extracción comercial de este caracol. Tal es el caso de una investigación realizada en Panamá donde detectan que cinco años después de haber prohibido la pesca de cambute, la población de estos en Las Perlas y Coiba Archipelagos no se encuentra en aumento, encontrando principalmente individuos adultos [@Cipriani2008].
 
-- Mortalidad: estimaciones numéricas o datos de mortalidad
+Una sola hembra puede ovopositar entre 185 000 y 460 000 huevos en cada desove. Esta variación en la cantidad de huevos puestos por cada hembra, se debe al efecto que ciertas condiciones ambientales generan sobre ellas, como por ejemplo: la temperatura y la disponibilidad de alimento. Cada hembra puede poner  entre 8 y 9 masas de huevos  en cada temporada reproductiva [@robertson1959]. 
 
-- Supervivencia: estimaciones numéricas o datos de supervivencia
+Otro estudio adapta un modelo de crecimiento de Von Bertalanffy a datos de juveniles, utilizando los siguientes parámetros: $L_\infty$ = 315 mm, K = 0.029 mo -1 , y t o = 0.5 meses. En el mismo se llegó a observar que la apariencia de un labio delgado es considerado un criterio pobre para la madurez sexual y entre mayor sea este, es recomendado para lograr la protección de las poblaciones bajo una fuerte presión de pesca, permitiendo que las poblaciones de *L. galeatus* puedan restablecerse con éxito [@Cipriani2008]. El objetivo de este trabajo es estimar la probabilidad de extinción a cinco años de la población de *Lobatus galeatus* en el Refugio Nacional de Vida Silvestre Punta Mala, Costa Rica.
 
-- Matrices de transición: todo lo relacionado con este tema.
 
-- Análisis de viabilidad de poblaciones: todo lo relacionado con este tema.
+#Metodología
 
-Durante la revisión bibliográfica es importante utilizar estos puntos como criterios de aceptación para un artículo. Si no contiene información sobre estos criterios, entonces no vale la pena incluirlo en la revisión.
+##Área de estudio
 
-Si el estudiante no está familiarizado con las herramientas de búsqueda bibliográfica y bases de datos suscritas por la Universidad Nacional, es su responsabilidad informarse con la bibliotecaria de la Unidad Académica.
+El Refugio Nacional de Vida Silvestre Punta Mala está localizado en la costa del Pacífico Central de Costa Rica, a 8 km de Playa Jacó y entre las coordenadas 9º31’04”N y 84º32’25” W  [@Alvarado2007]. Parte de la zona marino costera del refugio, consiste de varios metros de material rocoso formados durante el Mioceno medio, que quedan expuestos durante el periodo de marea baja [@seyfried1985sedimentologia] (Figura 1). Las condiciones climatológicas de la zona incluyen una precipitación media anual de 3 689 mm, una temperatura media anual de 27 ºC y una humedad relativa del 98% [@Solano2012].
 
-# Metodología
+![Figura 1. Ubicación de la zona de muestreo, Refugio Nacional de Vida Silvestre Playa Hermosa-Punta Mala, 2018.](C:\Users\Eilyn\Desktop\ecologia)
 
-Definir el procedimiento de análisis. Se basarán en la teoría, en las investigaciones individuales, y en una búsqueda general en línea, para escoger un procedimiento de análisis que permita **calcular la probabilidad de extinción de las poblaciones de interés a cinco años**.
+##Muestreo de Lobatus galeatus
 
-Diseño de muestreo. Solo hay tiempo para un sitio por población. Por tanto, el diseño de muestreo se refiere al establecimiento de las variables que se deben medir en el campo, a los formularios de campo, al procedimiento para tomar los datos y al diseño de la base de datos (se *recomienda* una base de **LibreOffice Base**).
+Se realizó subgrupos de tres personas con una totalidad de tres grupos, se establecieron tres parcelas de 10 x 10 m, a conveniencia en la zona intermareal durante la marea baja, preferiblemente en zonas donde haya pozas o agua estancada. Además en cada parcela se efectuó   una búsqueda intensiva de individuos de *L. galeatus* por un tiempo determinado de 20 minutos; así mismo se utilizó la técnica de búsqueda por buceo con tubo de respiración (según lo sugerido por @Arroyo-Mora1998). Posteriormente se recolectaron solamente los individuos vivos con el fin de realizar la biometría del largo total de la concha (medición con vernier, ±0.005mm) de cada animal, una vez medidos se depositaron a una distancia no menor de 10 metros de la parcela medida. Este procedimiento se replicó por tres veces mínimo, hasta que no se encuentren individuos vivos dentro del lapso de tiempo determinado. 
+
+Por otro lado utilizando las medidas  descritas por [@Arroyo-Mora1998], donde asigna a cada individuo una clase según la edad, por ejemplo para juveniles corresponde a una longitud inferior a 150 mm, subadultos entre 150 - 170 mm y adultos superior a los 170 mm. Se logró separar cada organismo recolectado en las distintas clases y  a partir de los datos obtenidos se construye una tabla de vida.
+
+ A partir de los datos obtenidos para clase de edad se construirá una tabla de vida. Además de todos los individuos encontrados se anotará si en el momento de la captura se encuentra vivo o muerto.  En conjunto con la estimación de la edad de cada individuo, se calculará la proporción de individuos que sobreviven o mueren en cada estadío.
+ 
+##Proceso de análisis 
+
+
+###Recursos de información
+
+ Para realizar el análisis requerimos los siguientes recursos de información:
+ 
+ - Talla (cm)
+ 
+ - Condición (Vivo o Muerto)
+ 
+ - Función de crecimiento
+ 
+ - Fecundidad, se refiere a número de individuos juveniles que son producidos por los individuos adultos y los subadultos
+ 
+ - Años de proyección
+ 
+ - Tamaño de la población de la coasi-extincion
+ 
+ - N0 
+ 
+ - Área de la población.
+ 
+### Análisis
+
+Para el analisis de los datos recolectados, se utilizó el paquete de R, denominado "Unmarked", es un modelo que se utiliza para animales no marcados y de abundancia. Así mismo, se utilizó la función "gmultmix Generalized multinomial N-mixture model", basándose en la opción de remoción (Removal) y variando la función de acuerdo a los datos que obtenidos. Además esta función, toma en cuenta las características de abundancia, disponibilidad y probabilidad de detección, es decir para obtener la probabilidad  de existencia en los sitios de muestreo de las clases obtenidas. 
+
+Función utilizada es:
+
+```{r}
+umf1 <- unmarkedFrameGMM(y= juvenil, numPrimary=1, type="removal")
+umf2 <- unmarkedFrameGMM(y= Subadulto, numPrimary=1, type="removal")
+```
+
+
+Por otra parte, a partir del conjunto de datos recolectados de la longitud de la concha para cada clase de edad, se utilizó la función de crecimiento de Von Bertalanffy para estimar la probabilidad de madurez sexual de cada individuo. Por último se calculó la matriz de transición proyectada a 5 años, que permita estimar la probabilidad de extinción de la especie en ese sitio al final de ese periodo.
+
+Función de Von Bertalanffy:
+
+```{r}
+ VB<-function(Li,k,t,t0)
+```
+
+
+Área de muestreo
+
+Con el programa libre Qgis versión  2.18  y una foto satelital de Google Earth pro, se delimitará el área de muestreo ,posteriormente se efectuarán puntos aleatorios en los cuales se levantarán  las áreas de muestreo, en cada una de ellas se harán las parcelas de muestréo cuyas dimensiones son de 20x 50m.
+
+talla y edad 
+
+A partir del conjunto de datos recolectados de la longitud de la concha para cada clase de edad.  Se utilizará la función de crecimiento de Von Bertalanffy para estimar la probabilidad de que un individuo de una clase de edad determinada pase a la siguiente. Además con base a los datos de fecundidad reportados en la literatura ( Marlon encontró valores de fecundidad numero de huevos por individuo, falta transformar utilizando taza de ecloción),
+
+calcular matriz a partir de superviven, calcu vec poblacion incial
+
+utilizando se calculará una matriz de transición proyectada a 5 años, que permita estimar la probabilidad de extinción de la especie en ese sitio al final de ese periodo.
+
+
+Fecundidad
+
+La fecundidad representada como F en las tablas de transición, es la probabilidad de que un individuo pase de una etapa avanzada a la etapa menor avanzada (en términos generales que un individuo sexualmente maduro sea juvenil o adulto se reproduzca), estos datos se obtienen al generar una matriz de transición, F1 se ubicaría en la segunda columna en la primer fila siendo la probabilidad de que un juvenil se reproduzca y F2 en la tercer columna en la primer fila representando la probabilidad que un individuo adulto se reproduzca.
+
+Cuasi-extinción
+
+Para determinar la probabilidad de cuasi-extinción se utilizará el método de análisis de viabilidad de poblaciones, que estará determinado por la matriz de transicion con estocasticidad, para esto se utilizará el paquete estadistico popbio, en el software de R y un conjunto de datos llamado Hudsonia.
+
+Para este análisis es necesario contar con la matriz de transición y el tamaño de la población, la cual se obtendrán del muestreo de individuos y de la clasificación, el valor máximo del tiempo de proyección de la población será de 5 años, el umbral  y las etapas o clases que se incluyen o excluyen para el analisis.
+
+
+Matriz de transición
+
+a partir de la curva de crecimiento de Von Bertalanffy y los datos de fecundidad 
+
+Procedimiento de recolección
+
+Se establecerán parcelas de (10 x 10) m, estas serán medidas con cinta métrica y ubicadas con brújulas. Se colectarán todos los individuos usando muestreo intensivo de individuos; así como, por buceo con tubo de respiración , los individuos se depositarán en un recipiente con agua para evitar remuestreo y los especímenes se procesarán a la orilla de la playa, al finalizar la toma de medidas de cada espécimen se liberarán, los muestreos se realizarán en marea baja, y las parcelas estarán a una profundidad máxima de (XXX) metros.
+
+A cada individuo colectado, se le tomarán las medidas correspondientes, con un vernier de ±0.005 mm, se anotará además si el animal esta vivo o muerto.
+
+#Análisis estadistico 
+
+Para el analisis de los datos recolectados, se procedio a escoger el paquete de R, llamado "Unmarked", es un modelo que se utiliza para animales no marcados y que se adapta a distintos caracteristicas, donde uno de ellos es el planteado en esta investigación.
+
+Asi mismo, se utilizó la función "gmultmix Generalized multinomial N-mixture model", basandose en la opción de remoción (Removal), ya que corresponde al método de muestreo que se utiliza. Además esta función, toma encuenta las caracteristicas de  abundancia, disponibilidad y probabilidad de detección. 
+
+Los argumentos principales son los siguientes:
+   
+ Por otra parte las ecuaciones que se utilizaran son las siguientes:
+     
+  
+
+
+  
+   
+   
+
+
+
+
 
 # Resultados
 
-Aquí se presentará la estimación de la probabilidad de extinción a 5 años para cada especie. También cualquier resultado que surge como paso intermedio para calcular la probabilidad de extinción.
+
+Durante los muestreos en los 12 sitios de estudio no se encontraron con individuos adultos, los individuos con talla de subadulto fueron dos individuos y estados inmaduros fueron los mas comunes de encontrar con un total de 21 individuos. en la figura 1 muestra el calculo de las probabilidades de presencia por sitio de muestreo para los individuos inmaduros y en la figura 2 se muestran las probabilidades de presencia por sitio de individuos juveniles, para el calculo de adultos no se pudo realizar por falta de datos. 
+
+nT:(21,1,0)
+
+```{r}
+
+plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
+
+```
+figura 1: probabilidades de presencia de *S. galeatus* juveniles en las parcelas escogidas aleatoriamente.
+
+```{r}
+
+plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
+```
+figura 2: probabilidad de presencia de individuos subadultos de *S. galeatus* en las parcelas seleccionadas para el estudio.
+
+
+Mediante la funcion de crecimiento de von bertalanffy pudimos determinar que los organismos de *S. galeatus* tardan aproximadamente 5 años en crecer hasta tener la talla adecuada para la madurez sexual (figura 3)
+
+```{r}
+
+curve(expr = VB(Li=183.2,k=0.3706,t0=-0.2,t=x),from=0, to=15)
+```
+figura 3: funcion de crecimiento de von Bertalanffy de *S. gigas*
+
+posteriormente el calculo de la matriz de transicion nos indica que la poblacion goza de buena salud, sin embargo cabe recalcar que en este estudio no se tomo en consideracion la mortalidad, por esto se asume que todos los individuos juveniles pasan a sub adultos y de subadultos a adultos sin haber bajas en sus individuos. 
+
+```{r}
+
+Viabilidadcambute$plotN()  
+```
+
+la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años la poblacion de cambute seguirá en el sitio.
+
+```{r}
+Viabilidadcambute$plotExtProb()
+```
+
 
 # Discusión
 
+<<<<<<< HEAD
 #discosion de los graficos de barra  Pual y memo
 Los resultados muestran que la abundacia de *S.galeatus* en el RNVS Punta Mala es baja, al menos en la zona supralitoral. El metodo utilizado en este estudio permitió una deteccion similar en los doce cuadrantes, aunque los individuos registrados fueron pocos y correspondieron en su mayoría a la clase juvenil, no se puede ausgurar que en el sitio haya habido una alta extraccion de caracoles para la comercializacion, ya que los cambios drasticos en las condiciones ambientales que esta zona experimenta a llargo del dia, puede ser un factor que afecte la abundancia de caracoles vivos en las diferentes clases de edad. Por lo tanto es recomendable realizr un muestreo estratificado a diferentes profundidades.  
+=======
+Discutiremos sobre la validez de los resultados, en función de los datos obtenidos y los requerimientos del análisis de datos
+>>>>>>> master
 
 # Cuadros
 
