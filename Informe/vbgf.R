@@ -1,3 +1,4 @@
+library(popbio)
 
 #-----abundancia por remocion-----
 
@@ -12,40 +13,40 @@ juvenil <- as.matrix(juvenil)
 
 umf1 <- unmarkedFrameGMM(y= juvenil, numPrimary=1, type="removal")# remocion solo se realizo una vez
 
-(m1 <- gmultmix(~1, ~1, ~1, data=umf1, K=30)) #no hay covariables 
+m1 <- gmultmix(~1, ~1, ~1, data=umf1, K=30) #no hay covariables 
 backTransform(m1, type="lambda") # Individuals per plot
-backTransform(m1, type="phi") # Probability of being avilable
-(p <- backTransform(m1, type="det")) # Probability of detection
-p <- coef(p)
+#backTransform(m1, type="phi") # Probability of being avilable
+#(p <- backTransform(m1, type="det")) # Probability of detection
+#p <- coef(p)
 # Multinomial cell probabilities under removal design
-c(p, (1-p) * p, (1-p)^2 * p)
+#c(p, (1-p) * p, (1-p)^2 * p)
 # Or more generally:
-head(getP(m1))
+#head(getP(m1))
 # Empirical Bayes estimates of super-population size
 re <- ranef(m1)
-plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
+#plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
 
 
 
 ## Leer los datos Subadultos
-Subadulto <- read.csv("Subadulto.csv", header = FALSE, row.names = NULL)
+Subadulto <- read.csv("C:/localforks/grupal2018/informe/Subadulto.csv", header = FALSE, row.names = NULL)
 Subadulto <- as.matrix(Subadulto)
 
 
 umf2 <- unmarkedFrameGMM(y= Subadulto, numPrimary=1, type="removal")
 
-(m1 <- gmultmix(~1, ~1,~1, data=umf2, K=30)) #no hay covariables 
-backTransform(m1, type="lambda") # Individuals per plot
-backTransform(m1, type="phi") # Probability of being avilable
-(p <- backTransform(m1, type="det")) # Probability of detection
-p <- coef(p)
+(m2 <- gmultmix(~1, ~1,~1, data=umf2, K=30)) #no hay covariables 
+backTransform(m2, type="lambda") # Individuals per plot
+#backTransform(m2, type="phi") # Probability of being avilable
+#(p <- backTransform(m1, type="det")) # Probability of detection
+#p <- coef(p)
 # Multinomial cell probabilities under removal design
-c(p, (1-p) * p, (1-p)^2 * p)
+#c(p, (1-p) * p, (1-p)^2 * p)
 # Or more generally:
-head(getP(m1))
+#head(getP(m1))
 # Empirical Bayes estimates of super-population size
-re <- ranef(m1)
-plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
+#re <- ranef(m2)
+#plot(re, layout=c(5,5), xlim=c(-1,20), subset=site%in%1:25)
 
 
 #-----ecuacion de von bertalanffy----
@@ -253,10 +254,5 @@ Viabilidadcambute <- transStochMat$new(
   incluirEtapa=c(0,1,1)
 )
 
-# Tener en cuenta que la matriz de transición en este caso no toma en cuenta la mortalidad de una etapa a la siguiente. Por tanto, los resultados tienden a ser muy optimistas.
-Viabilidadcambute$plotN()     
 
-Viabilidadcambute$darR0()
-Viabilidadcambute$plotExtProb()
-#####aqui no se que estoy haciendo
-library(popbio)
+
