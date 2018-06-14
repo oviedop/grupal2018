@@ -301,6 +301,11 @@ Viabilidadcambute$plotN()
 
 la probabilidad de extinción para los individuos de *S. gigas* en 5 años es de 0 individuos, indicando que en los proximos 5 años todos los especimenes desapareceran en la zona.
 
+```{r}
+Viabilidadcambute$plotExtProb()
+```
+
+
 # Discusión
 
 Discutiremos sobre la validez de los resultados, en función de los datos obtenidos y los requerimientos del análisi de datos
