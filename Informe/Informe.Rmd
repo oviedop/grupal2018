@@ -6,14 +6,15 @@ abstract: |
   
 authors:
 - name: |
-<<<<<<< HEAD
-  Jose Guillermo  
+
+ 
 
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
   
 
-=======
 
+       
+      
       Diego Monge-Villegas, 
       
       Paul Oviedo,
@@ -22,8 +23,14 @@ authors:
       
       Eilyn Flores-Zuñiga,
       
+      Marlon Guerrero-Castro,
+
+      Marlon Guerrero,
+
+      
       Marlon Guerrero,
       
+
       Jose Guillermo Ramirez Bogantes,
       
       Jessica Jimenes Loria
@@ -32,8 +39,13 @@ authors:
       
       Veronica Arias 
       
+
+affiliation: "Escuela de Ciencias Biológicas, Universidad Nacional"
+
   affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
->>>>>>> master
+
+  affiliation: Escuela de Ciencias Biológicas, Universidad Nacional
+
 date:  "`r format(Sys.Date(), '%d de %B, %Y')`"
 publisher: "Some Publisher"
 output: DMtemplates::APAreport
@@ -131,9 +143,19 @@ devtools::install_github("dawidh15/DMtemplates")
 
  *Lobatus gigas* es un gasterópodo muy importante comercialmente en muchos de los lugares donde se distribuye. La carne de este caracol es conocida por ser una buena fuente de alimento y proteína, además la concha es comercializada con propósitos ornamentales [@ForbesPacheco2011]. Este molusco alcanza unos 25 cm de longitud en la concha después de 3 a 4 años; edad a partir de la cual son sexualmente maduros. El cambute habita en aguas poco profundas, raras veces son observadas a más de 50 m de profundidad. La especie esta distribuida en la región del Atlántico Occidental, desde Bermudas en el norte hasta el Golfo de México, la parte del Gran Caribe y la costa del norte de América del Sur [@GarciaRodriguez2016].En la vertiente del Pacífico el género *Lobatus* se ubica desde México hasta las islas Galápagos.
  
+
+ En la costa del Pacífico americano, los caracoles del género *Lobatus*, mejor conocidos como cambute, se distribuyen desde el Golfo de México hasta las islas Galápagos. En Costa Rica es posible hallar estos caracoles a lo largo de toda la costa, principalmente en zonas rocosas y poco profundas.  En el sector San Miguel del Refugio Nacional de Vida Silvestre Cabo Blanco, se estimó la población de *Lobatus galeatus* en 627 individuos, donde el adulto con mayor peso alcanzó  2 775 g y el juvenil más pequeño pesó 50 g. A nivel etario es posible separar los individuos de cambute en tres clases de edades (adultos, subadultos y juveniles), de acuerdo con la biometría de su concha (largo, ancho y grosor del labio). Por ejemplo, se estima que el largo medio de la concha de los adultos es de  183,2 ± 9,5 mm, mientras que el ancho medio de la concha es de 146,5 ± 11,1 mm [@mora1998estructura].
+
+ En la costa del Pacífico americano, los caracoles del género *Lobatus*, mejor conocidos como cambute, se distribuyen desde el Golfo de México hasta las islas Galápagos. En Costa Rica es posible hallar estos caracoles a lo largo de toda la costa, principalmente en zonas rocosas y poco profundas.  En el sector San Miguel del Refugio Nacional de Vida Silvestre Cabo Blanco, se estimó la población de *Lobatus galeatus* en 627 individuos, donde el adulto con mayor peso alcanzó  2 775 g y el juvenil más pequeño pesó 50 g. A nivel etario es posible separar los individuos de cambute en tres clases de edades (adultos, subadultos y juveniles), de acuerdo con la biometría de su concha (largo, ancho y grosor del labio). Por ejemplo, se estima que el largo medio de la concha de los adultos es de 183,2 ± 9,5 mm, mientras que el ancho medio de la concha es de 146,5 ± 11,1 mm [@mora1998estructura].
+
 En Costa Rica se han realizado estudios de *L. galeatus* en el sector de San Miguel del Refugio de Vida Silvestre Cabo Blanco. En este stio se registró un total de 627 individuos, donde el adulto con mayor peso alcanzó  2 775 g y el juvenil más pequeño pesó 50 g. A nivel etario es posible separar los individuos de cambute en tres clases de edades (adultos, subadultos y juveniles), de acuerdo con la biometría de su concha (largo, ancho y grosor del labio). Por ejemplo, se estima que el largo medio de la concha de los adultos es de 183,2 ± 9,5 mm, mientras que el ancho medio de la concha es de 146,5 ± 11,1 mm [@mora1998estructura].
- 
+
+Las  poblaciones de *Lobatus galeatus* en  lugares como: Panamá, Mexico, Ecuador y otros lugares del Pacifico muestran una baja tasa de crecimiento en los últimos años. Esta situación se relaciona con la explotación masiva sin regulaciones provocada por el ser humano para el consumo de este molusco, el cual es una especie importante para la economía local de muchos sectores y a menudo compite con los planes de conservación [@Castellanos-Galindo2011]. Al aplicar un programa de monitoreo y de información a los pescadores se convierte en una alternativa para combatir tal efecto en la mortalidad de la especie y que las poblaciones de galeatus pueden restaurarse con éxito.
+
+Las  poblaciones de *Lobatus galeatus* en lugares como: Panamá, Mexico, Ecuador y otros lugares del Pacifico muestran una baja tasa de crecimiento en los últimos años. Esta situación se relaciona con la explotación masiva sin regulaciones provocada por el ser humano para el consumo de este molusco, el cual es una especie importante para la economía local de muchos sectores y a menudo compite con los planes de conservación [@Castellanos-Galindo2011]. Al aplicar un programa de monitoreo y de información a los pescadores se convierte en una alternativa para combatir tal efecto en la mortalidad de la especie y que las poblaciones de galeatus pueden restaurarse con éxito.
+
 Las  poblaciones de *Lobatus galeatus* en lugares como: Panamá, Mexico, Ecuador y otros lugares del Pacífico muestran una baja tasa de crecimiento en los últimos años. Esta situación se relaciona con la explotación masiva sin regulaciones provocada por el ser humano para el consumo de este molusco [@Castellanos-Galindo2011]. Los modelos de crecimiento en esta especie son utilizados en muchos para establecer políticas que regulen la extracción y comercialización. Por ejemplo, en Panamá han detectado que cinco años después de haber prohibido la extracción de cambute, la población aun no muestra una tendencia al aumento, a pesar de encontrar principalmente individuos adultos [@Cipriani2008].
+
 
 Los modelos de crecimiento en esta especie son utilizados en muchos estudios con el fin de determinar si la población se encuentra en declive o en aumento, después de que se prohíbe o se permite la extracción comercial de este caracol. Tal es el caso de una investigación realizada en Panamá donde detectan que cinco años después de haber prohibido la pesca de cambute, la población de estos en Las Perlas y Coiba Archipelagos no se encuentra en aumento, encontrando principalmente individuos adultos [@Cipriani2008].
 
@@ -181,6 +203,11 @@ Por otro lado utilizando las medidas  descritas por [@Arroyo-Mora1998], donde as
  
  - Área de la población.
  
+
+Transformar tallas u edades (F.C.V.B)(PAUL Y Marlon), para esto hay que buscar y calcular F1 y F2(yEKA), luego tenemos un número de individuos por área y se pasa a número de individuos extrapolando al área total de población que se define con SIG (MEMO). Definir N coasi-extincio (EILyN). Con esta información se corre la matris en el sofwere (dIEGILLO) y se interpretan los resultados (ANTONI)
+
+Transformar tallas u edades (F.C.V.B)(PAUL Y MARLON), para esto hay que buscar y calcular F1 y F2(yEKA), luego tenemos un número de individuos por área y se pasa a número de individuos extrapolando al área total de población que se define con SIG (MEMO). Definir N coasi-extincio (EILyN). Con esta información se corre la matris en el sofwere (dIEGILLO) y se interpretan los resultados (ANTONI)
+
 ### Análisis
 
 Para el analisis de los datos recolectados, se utilizó el paquete de R, denominado "Unmarked", es un modelo que se utiliza para animales no marcados y de abundancia. Así mismo, se utilizó la función "gmultmix Generalized multinomial N-mixture model", basándose en la opción de remoción (Removal) y variando la función de acuerdo a los datos que obtenidos. Además esta función, toma en cuenta las características de abundancia, disponibilidad y probabilidad de detección, es decir para obtener la probabilidad  de existencia en los sitios de muestreo de las clases obtenidas. 
@@ -257,7 +284,11 @@ Los argumentos principales son los siguientes:
 
 
 
+
 # Resultados
+
+
+Aquí se presentará la estimación de la probabilidad de extinción a 5 años para cada especie. También cualquier resultado que surge como paso intermedio para calcular la probabilidad de extinción.
 
 
 Durante los muestreos en los 12 sitios de estudio no se encontraron con individuos adultos, los individuos con talla de subadulto fueron dos individuos y estados inmaduros fueron los mas comunes de encontrar con un total de 21 individuos. en la figura 1 muestra el calculo de las probabilidades de presencia por sitio de muestreo para los individuos inmaduros y en la figura 2 se muestran las probabilidades de presencia por sitio de individuos juveniles, para el calculo de adultos no se pudo realizar por falta de datos. 
@@ -300,12 +331,12 @@ Viabilidadcambute$plotExtProb()
 ```
 
 
-# Discusión
-
-
-# Discusion de los graficos de barra..
+#   Discusión
 
 Los resultados muestran que la abundacia de *S.galeatus* en el RNVS Punta Mala es baja, al menos en la zona supralitoral. El metodo utilizado en este estudio permitió una deteccion similar en los doce cuadrantes, aunque los individuos registrados fueron pocos y correspondieron en su mayoría a la clase juvenil, no se puede ausgurar que en el sitio haya habido una alta extraccion de caracoles para la comercializacion, ya que los cambios drasticos en las condiciones ambientales que esta zona experimenta a llargo del dia, puede ser un factor que afecte la abundancia de caracoles vivos en las diferentes clases de edad. Por lo tanto es recomendable realizr un muestreo estratificado a diferentes profundidades.  
+
+En lo referente a la evaluación de viabilidad de la población dentro de cinco años, esta no presenta probabilidad de extinguirse en ese periodo. Pero esto no implica que esta población esté en óptimas condiciones, esto debido a que la densidad poblacional es muy baja siendo   de 0,02 individuos por metro cuadrado, en comparación con otras poblaciones en las que se han podido registrar de uno a dos individuos por metro cuadrado. Esta población a pesar de no presentar individuos reproductores, en los siguientes cinco años todos estos individuos registrados podrán reproducirse debido a que a partir de los 3,5 años de edad pueden reproducirse, sumado a la gran tasa reproductiva de esta especie podrían renovar a esta población, pero el problema de disponibilidad de alimento podría ser la misma limitante que impediría el establecimiento de nuevos individuos. Esta población fue representada en su mayoría por individuos juveniles, se sabe que para esta clase de edad existe un requerimiento de hábitat muy diferente al de los adultos, el cual debe ser de áreas con altas densidades de pastos marinos, estas funcionan como guarderías que les permite a los individuos jóvenes esconderse de potenciales depredadores y a la vez poder alimentarse del pasto marino. En el área de estudio la disponibilidad de este recurso fue muy escaso y de los pocos individuos registrados, la mayoría estaba asociado a las algas adheridas en las rocas.  A pesar de que en este estudio no se realizó una evaluación de la disponibilidad de alimento para el cambute, esta baja densidad puede ser la explicación principal del tamaño reducido de esta población. Una de las principales razones de la perdida de pastos marinos se debe a la presencia de contaminantes en el agua, pudiendo asociarse la presencia de algún químico o la alta concentración de sedimentos con la muerte de estos organismos, esta población se encuentra relativamente cerca de la desembocadura del rio Tárcoles, siendo este uno de los cuerpos de agua más contaminados de Latinoamérica, que podria estar afectando  a esta poblacion. 
+
 
 
 # Cuadros
